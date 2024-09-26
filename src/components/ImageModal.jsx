@@ -19,8 +19,9 @@ export default function ImageModal({ isOpen, onClose, image }) {
           alt={image.alt_description}
           className={css.image}
         />
-
-        <p className={css.imageInfo}>Author: {image.user.name}</p>
+        <div className={css.imageInfo}>
+          <p>Author: {image.user.name}</p>
+        </div>
       </div>
     </Modal>
   );
